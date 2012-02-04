@@ -11,20 +11,40 @@
 @implementation AppDelegate
 
 @synthesize window = _window;
+@synthesize viewController = viewController;
 
-- (void)dealloc
-{
+- (void)dealloc {
     [_window release];
+    [viewController release];
+    [poop release];
+    [timer invalidate];
     [super dealloc];
 }
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-    // Override point for customization after application launch.
+
+    self.viewController = [[UIViewController alloc] init];
+    poop = [[PoopView alloc] initWithFrame:CGRectMake(10, 10, 50, 50)];
+    [poop setVelocity:CGPointMake(200, 200)];
+    [poop setFriction:100];
+    timer = [NSTimer scheduledTimerWithTimeInterval:(1.0 / 60.0) target:self
+                                           selector:@selector(animationTimer)
+                                           userInfo:nil repeats:YES];
+    
+    [self.viewController.view addSubview:poop];
+    [self.window addSubview:self.viewController.view];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (void)animationTimer {
+    CGPoint center = [poop center];
+    CGRect viewBounds = CGRectMake(25, 25, 320 - 50, 460 - 50);
+    CGPoint center2 = [poop pointSinceLastDate:center bounds:viewBounds];
+    [poop setCenter:center2];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

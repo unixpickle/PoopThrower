@@ -7,9 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PoopView.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate> {
+    NSTimer * timer;
+    PoopView * poop;
+}
 
-@property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, retain) UIWindow * window;
+@property (nonatomic, retain) UIViewController * viewController;
+
+- (void)animationTimer;
 
 @end

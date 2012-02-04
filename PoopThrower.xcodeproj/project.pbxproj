@@ -13,6 +13,10 @@
 		FA7E92B514DCD5840088C6DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA7E92B314DCD5840088C6DF /* InfoPlist.strings */; };
 		FA7E92B714DCD5840088C6DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7E92B614DCD5840088C6DF /* main.m */; };
 		FA7E92BB14DCD5840088C6DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7E92BA14DCD5840088C6DF /* AppDelegate.m */; };
+		FA7E92C314DCD5960088C6DF /* AcceleratingView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7E92C214DCD5960088C6DF /* AcceleratingView.m */; };
+		FA7E92C614DCE0540088C6DF /* PoopView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7E92C514DCE0540088C6DF /* PoopView.m */; };
+		FA7E92C814DCF1300088C6DF /* poop.png in Resources */ = {isa = PBXBuildFile; fileRef = FA7E92C714DCF1300088C6DF /* poop.png */; };
+		FA7E92CB14DCF1DA0088C6DF /* ThrowableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7E92CA14DCF1D90088C6DF /* ThrowableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +24,19 @@
 		FA7E92AA14DCD5840088C6DF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FA7E92AC14DCD5840088C6DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FA7E92AE14DCD5840088C6DF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		FA7E92B214DCD5840088C6DF /* PoopThrower-Info.plist */ = {isa = PBXFileReference; path = "PoopThrower-Info.plist"; sourceTree = "<group>"; };
+		FA7E92B214DCD5840088C6DF /* PoopThrower-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PoopThrower-Info.plist"; sourceTree = "<group>"; };
 		FA7E92B414DCD5840088C6DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FA7E92B614DCD5840088C6DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FA7E92B814DCD5840088C6DF /* PoopThrower-Prefix.pch */ = {isa = PBXFileReference; path = "PoopThrower-Prefix.pch"; sourceTree = "<group>"; };
-		FA7E92B914DCD5840088C6DF /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		FA7E92B814DCD5840088C6DF /* PoopThrower-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PoopThrower-Prefix.pch"; sourceTree = "<group>"; };
+		FA7E92B914DCD5840088C6DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FA7E92BA14DCD5840088C6DF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FA7E92C114DCD5960088C6DF /* AcceleratingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcceleratingView.h; sourceTree = "<group>"; };
+		FA7E92C214DCD5960088C6DF /* AcceleratingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AcceleratingView.m; sourceTree = "<group>"; };
+		FA7E92C414DCE0540088C6DF /* PoopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoopView.h; sourceTree = "<group>"; };
+		FA7E92C514DCE0540088C6DF /* PoopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoopView.m; sourceTree = "<group>"; };
+		FA7E92C714DCF1300088C6DF /* poop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poop.png; sourceTree = "<group>"; };
+		FA7E92C914DCF1D90088C6DF /* ThrowableView.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = ThrowableView.h; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; wrapsLines = 1; };
+		FA7E92CA14DCF1D90088C6DF /* ThrowableView.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = ThrowableView.m; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; wrapsLines = 1; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +85,12 @@
 			children = (
 				FA7E92B914DCD5840088C6DF /* AppDelegate.h */,
 				FA7E92BA14DCD5840088C6DF /* AppDelegate.m */,
+				FA7E92C114DCD5960088C6DF /* AcceleratingView.h */,
+				FA7E92C214DCD5960088C6DF /* AcceleratingView.m */,
+				FA7E92C914DCF1D90088C6DF /* ThrowableView.h */,
+				FA7E92CA14DCF1D90088C6DF /* ThrowableView.m */,
+				FA7E92C414DCE0540088C6DF /* PoopView.h */,
+				FA7E92C514DCE0540088C6DF /* PoopView.m */,
 				FA7E92B114DCD5840088C6DF /* Supporting Files */,
 			);
 			path = PoopThrower;
@@ -82,6 +99,7 @@
 		FA7E92B114DCD5840088C6DF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FA7E92C714DCF1300088C6DF /* poop.png */,
 				FA7E92B214DCD5840088C6DF /* PoopThrower-Info.plist */,
 				FA7E92B314DCD5840088C6DF /* InfoPlist.strings */,
 				FA7E92B614DCD5840088C6DF /* main.m */,
@@ -141,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA7E92B514DCD5840088C6DF /* InfoPlist.strings in Resources */,
+				FA7E92C814DCF1300088C6DF /* poop.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +172,9 @@
 			files = (
 				FA7E92B714DCD5840088C6DF /* main.m in Sources */,
 				FA7E92BB14DCD5840088C6DF /* AppDelegate.m in Sources */,
+				FA7E92C314DCD5960088C6DF /* AcceleratingView.m in Sources */,
+				FA7E92C614DCE0540088C6DF /* PoopView.m in Sources */,
+				FA7E92CB14DCF1DA0088C6DF /* ThrowableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
